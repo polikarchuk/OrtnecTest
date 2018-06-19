@@ -1,0 +1,121 @@
+
+h3{
+    font-size: 24px;
+    color: #465993;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 26px;
+    position: relative;
+}
+h3:before{
+    position: absolute;
+    content: "";
+    background: #d0d8ef;
+    right: 0;
+    top: 50%;
+    width: 71%;
+    height: 1px;
+}
+
+ul{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+li{
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 220px;
+}
+.img_box{
+    padding: 18px 0;
+    background:  rgba(0,0,0,1);
+    border-radius: 5px;
+    margin-bottom: 12px;
+    position: relative;
+
+}
+.img_box img{
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    width: 100%;
+}
+.img_box img:hover{
+  opacity: 0.4;
+
+}
+
+.img_box a{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #465993;
+    font-family: 'icomoon', sans-serif;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.img_box a:before{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.img_box a:hover{
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+.img_box a.facebook:before{
+    content: "\e900";
+}
+.img_box a.instagram:before{
+    content: "\e901";
+}
+.img_box a.twitter:before{
+    content: "\e903";
+}
+p{
+    font-size: 14px;
+    color: #465993;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media only screen and (max-width: 930px) {
+    h3:before{
+        width: 50%;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
+    h3{
+        text-align: center;
+    }
+    h3:before{
+       display: none;
+    }
+
+
+}
+@media only screen and (max-width: 440px) {
+
+  li{
+      width: 100%;
+  }
+
+}

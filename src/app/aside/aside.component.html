@@ -1,0 +1,24 @@
+<aside>
+  <div class="photo_model">
+    <img src="../../assets/img/img_profil.png">
+  </div>
+  <h4>{{listAccount.modelInfo?.name}}</h4>
+  <ul>
+    <li>
+      <strong>Started: </strong>
+      <a href="">{{listAccount.modelInfo?.yearStarted}}</a>
+    </li>
+    <li>
+      <strong>Age:</strong>
+      <a href="" class="age"> {{listAccount.modelInfo?.age}} years</a>
+    </li>
+    <li>
+      <strong>Activities:</strong>
+      <a [href]="u.url" *ngFor="let u of listAccount.modelInfo?.activities">{{u.title}}</a>
+
+    </li>
+  </ul>
+  <p>
+   {{listAccount.modelInfo?.description}}
+  </p>
+</aside>

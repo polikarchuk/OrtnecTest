@@ -1,0 +1,11 @@
+
+<h3>Sandra Star’s video</h3>
+<ul>
+  <li *ngFor="let u of listCategoryes.videos" (click)="videoSelected.emit(u)">
+    <div class="img_box">
+        <img src="../../assets/img/list.png">
+      <a [href]="u.socialLink.url" class="{{u.socialLink.type}}"></a>
+    </div>
+    <p>{{u.title}}</p>
+  </li>
+</ul>
